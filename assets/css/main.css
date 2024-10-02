@@ -1,0 +1,134 @@
+/* zennur start */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+	height: 100%;
+}
+body {
+	line-height: 1;
+	background: #FFF;
+	height: 100%;
+	font-family: "Inter", sans-serif;
+ }
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid #ededed;
+}
+
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 64px;
+}
+.header__logo{
+  width: 128px;
+  height: 32px;
+  margin-left: 0px;
+}
+.header__nav{
+  padding-top: 3px;
+  display: none;
+    a{
+      text-decoration: none;
+      padding: 32px;
+      font-weight: 600;
+      line-height: 22px;
+      font-family: Inter;
+      font-size: 15px;
+      color: #272D37;
+      font-family: "Inter", sans-serif;
+    }
+  }
+
+.header__sign{
+  display: none;
+  .header-sign-up{
+      padding: 12px 18px 12px 18px;
+      gap: 6px;
+      border-radius: 6px;
+      background-color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      border: none;
+      font-family: "Inter", sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 22px;
+      text-align: left;
+      color: #437EF7;
+  }
+
+  .header-login{
+    padding: 12px 18px 12px 18px;
+    gap: 6px;
+    border-radius: 6px;
+    gap: 6px;
+    background-color: #437EF7;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    color: #FFFFFF;
+   }
+}
+
+
+.header__hamburger-menu {
+  img{
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  
+  ul {
+    li {
+      margin-bottom: 8px;
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .header__mobile-nav a:hover{
+    color: rgba(179, 195, 6, 0.666);
+  }
+  &:hover {
+    .header__mobile-nav {
+      display: block;
+    }
+  }
+  i {
+    font-size: 24px;
+    color: #000000;
+  }
+}
+
+.header__mobile-nav {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  border-radius: 6px;
+  top: 24px;
+  right: 0;
+  width: 250px;
+  -webkit-box-shadow: 0px 2px 7px 0px var(--black);
+  box-shadow: 0px 2px 7px 0px var(--black);
+  padding: 20px;
+}
+
